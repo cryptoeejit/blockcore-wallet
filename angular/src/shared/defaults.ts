@@ -1,5 +1,5 @@
 import { Account } from './interfaces';
-import { BTC, CITY, CRS, CY, IDENTITY, NOSTR, RSC, SBC, STRAX, TCRS, TSTRAX, X42 , IMPLX} from './networks';
+import { BTC, CITY, CRS, CY, IDENTITY, NOSTR, RSC, SBC, STRAX, TCRS, TSTRAX, X42 , IMPLX, SERF} from './networks';
 const { v4: uuidv4 } = require('uuid');
 
 export class Defaults {
@@ -18,6 +18,7 @@ export class Defaults {
     networks.push(new TCRS());
     networks.push(new TSTRAX());
     networks.push(new X42());
+    networks.push(new SERF())
     return networks;
   }
 
